@@ -1,0 +1,25 @@
+[package]
+name = "ssg-verifier"
+description = "Checks Zcash compact-block scanning data against txids and the block's transaction Merkle root."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+lwproto = { path = "../lwproto" }
+prost.workspace = true
+blake2b_simd.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+hex.workspace = true
+# Parsing full transactions: the v4 raw path, and the producer side.
+zcash_primitives.workspace = true
+zcash_protocol = "0.10"
+orchard = { version = "=0.15.3", default-features = false }
+ff = "0.13"
+
+[dev-dependencies]
+serde_json.workspace = true
+# Only for the ZIP 244 test vectors shipped in zcash_primitives' test module.
+zcash_primitives = { version = "=0.30.0", default-features = false, features = ["std", "test-dependencies"] }

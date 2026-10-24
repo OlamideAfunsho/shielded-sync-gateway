@@ -1,0 +1,2 @@
+error: Sync error.
+caused by: RESCAN TRIGGERED: the wallet's Sapling records were cleared back to height 1 and the next sync rescans from there, because at height 114 the wallet's history accounted for a Sapling commitment tree of 0 where the chain reports 2

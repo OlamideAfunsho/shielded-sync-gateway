@@ -1,0 +1,42 @@
+{
+  "tip": 120,
+  "transactions": 123,
+  "coinbase": 120,
+  "with_shielded_parts": 3,
+  "by_version": [
+    {
+      "version": 6,
+      "group": "d884b698",
+      "count": 123
+    }
+  ],
+  "shielded": [
+    {
+      "height": 111,
+      "txid": "ffa4a593fd0793ff39043f7839bb7e1ba3b0aa166f8c2a925c2a4bfb4b9e2ae2",
+      "version": 6,
+      "sapling_spends": 0,
+      "sapling_outputs": 0,
+      "orchard_actions": 0,
+      "ironwood_actions": 2
+    },
+    {
+      "height": 114,
+      "txid": "24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c",
+      "version": 6,
+      "sapling_spends": 0,
+      "sapling_outputs": 2,
+      "orchard_actions": 0,
+      "ironwood_actions": 2
+    },
+    {
+      "height": 117,
+      "txid": "bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05",
+      "version": 6,
+      "sapling_spends": 0,
+      "sapling_outputs": 0,
+      "orchard_actions": 0,
+      "ironwood_actions": 2
+    }
+  ]
+}

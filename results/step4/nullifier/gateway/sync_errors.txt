@@ -1,0 +1,4 @@
+error: Sync error.
+caused by: server error
+caused by: server request failed
+caused by: code: 'Unrecoverable data loss or corruption', message: "ssg-gateway: block 117 failed verification; refusing to serve it: transaction 1: compact block claims txid bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05, fields hash to ca2cc42189f53bb0027412fb1ea50b2647850bc363882becde08c961fc4c9613"

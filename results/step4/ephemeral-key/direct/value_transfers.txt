@@ -1,0 +1,16 @@
+
+{
+    txid: bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05
+    datetime: 2011-02-02 23:17:04 UTC
+    status: confirmed
+    blockheight: 117
+    transaction fee: 10000
+    zec price: not available
+    kind: sent
+    value: 100000000
+    recipient_address: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+    pools_sent_from: 
+    pools_received: Ironwood
+    memos: 
+	memo 1: spend
+}

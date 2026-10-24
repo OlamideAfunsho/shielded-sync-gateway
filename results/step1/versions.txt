@@ -1,0 +1,4 @@
+zebrad 6.3.0
+zainod 0.10.1
+Zingo CLI 0.1.1
+ssg-gateway 0.1.0

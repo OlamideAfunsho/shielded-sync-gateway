@@ -1,0 +1,23 @@
+{
+  "ironwood_notes": {
+    "note_summaries": [
+      {
+        "value": 149990000,
+        "status": "confirmed at block height 117",
+        "spend_status": "unspent",
+        "memo": null,
+        "time": 1296688624,
+        "txid": "bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05",
+        "output_index": 0,
+        "account_id": 0,
+        "scope": "internal"
+      }
+    ]
+  },
+  "orchard_notes": {
+    "note_summaries": []
+  },
+  "sapling_notes": {
+    "note_summaries": []
+  }
+}

@@ -1,0 +1,5 @@
+2026-10-24T00:49:40.682917Z  INFO verified chain loaded checkpoint=0 resumed_at=0
+2026-10-24T00:49:40.682989Z  INFO verifying gateway listening listen=127.0.0.1:9168 indexer=http://127.0.0.1:9170 producer=http://127.0.0.1:9180
+2026-10-24T00:49:40.814985Z  WARN verification failed, verified height stays at 113: transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to c7a87bc7a22803b74752f245c20eacda9aa896ad0f8c336133938f9e624df967 height=114
+2026-10-24T00:49:45.386573Z  INFO verification recovered height=114
+2026-10-24T00:49:45.392469Z  INFO verified up to trusted tip height=120 blocks=120

@@ -1,0 +1,121 @@
+{
+  "payment_height": 114,
+  "spend_height": 117,
+  "tip": 120,
+  "honest": {
+    "ironwood": 149990000,
+    "sapling": 125000000,
+    "gateway_matches_direct": true
+  },
+  "cases": [
+    {
+      "name": "ciphertext",
+      "mutation": "ciphertext",
+      "target": "indexer",
+      "height": 114,
+      "direct": {
+        "ironwood": 149990000,
+        "sapling": 0,
+        "matches_honest": false,
+        "sync_errors": "",
+        "wallet_height": 120
+      },
+      "gateway": {
+        "verified_height_before_wallet": 113,
+        "verified_height_after_wallet": 113,
+        "held_below_mutation": true,
+        "failure": "transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to c7a87bc7a22803b74752f245c20eacda9aa896ad0f8c336133938f9e624df967",
+        "wallet_sync_errors": "error: Sync error.\ncaused by: server error\ncaused by: server request failed\ncaused by: code: 'Unrecoverable data loss or corruption', message: \"ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to c7a87bc7a22803b74752f245c20eacda9aa896ad0f8c336133938f9e624df967\"",
+        "wallet_ironwood": 0,
+        "wallet_sapling": 0
+      },
+      "recovered_matches_honest": true
+    },
+    {
+      "name": "ephemeral-key",
+      "mutation": "epk",
+      "target": "indexer",
+      "height": 114,
+      "direct": {
+        "ironwood": 149990000,
+        "sapling": 0,
+        "matches_honest": false,
+        "sync_errors": "",
+        "wallet_height": 120
+      },
+      "gateway": {
+        "verified_height_before_wallet": 113,
+        "verified_height_after_wallet": 113,
+        "held_below_mutation": true,
+        "failure": "transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to 49114b4481c6b440bd03064eb70105d7164c63da1567a588dc41a453f671e2d9",
+        "wallet_sync_errors": "error: Sync error.\ncaused by: server error\ncaused by: server request failed\ncaused by: code: 'Unrecoverable data loss or corruption', message: \"ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to 49114b4481c6b440bd03064eb70105d7164c63da1567a588dc41a453f671e2d9\"",
+        "wallet_ironwood": 0,
+        "wallet_sapling": 0
+      },
+      "recovered_matches_honest": true
+    },
+    {
+      "name": "nullifier",
+      "mutation": "nullifier",
+      "target": "indexer",
+      "height": 117,
+      "direct": {
+        "ironwood": 250000000,
+        "sapling": 125000000,
+        "matches_honest": false,
+        "sync_errors": "",
+        "wallet_height": 120
+      },
+      "gateway": {
+        "verified_height_before_wallet": 116,
+        "verified_height_after_wallet": 116,
+        "held_below_mutation": true,
+        "failure": "transaction 1: compact block claims txid bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05, fields hash to ca2cc42189f53bb0027412fb1ea50b2647850bc363882becde08c961fc4c9613",
+        "wallet_sync_errors": "error: Sync error.\ncaused by: server error\ncaused by: server request failed\ncaused by: code: 'Unrecoverable data loss or corruption', message: \"ssg-gateway: block 117 failed verification; refusing to serve it: transaction 1: compact block claims txid bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05, fields hash to ca2cc42189f53bb0027412fb1ea50b2647850bc363882becde08c961fc4c9613\"",
+        "wallet_ironwood": 0,
+        "wallet_sapling": 0
+      },
+      "recovered_matches_honest": true
+    },
+    {
+      "name": "omitted-tx",
+      "mutation": "omit-tx",
+      "target": "indexer",
+      "height": 114,
+      "direct": {
+        "ironwood": 0,
+        "sapling": 0,
+        "matches_honest": false,
+        "sync_errors": "error: Sync error.\ncaused by: RESCAN TRIGGERED: the wallet's Sapling records were cleared back to height 1 and the next sync rescans from there, because at height 114 the wallet's history accounted for a Sapling commitment tree of 0 where the chain reports 2",
+        "wallet_height": 120
+      },
+      "gateway": {
+        "verified_height_before_wallet": 113,
+        "verified_height_after_wallet": 113,
+        "held_below_mutation": true,
+        "failure": "transaction 1 has shielded data but the compact block omits it",
+        "wallet_sync_errors": "error: Sync error.\ncaused by: server error\ncaused by: server request failed\ncaused by: code: 'Unrecoverable data loss or corruption', message: \"ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1 has shielded data but the compact block omits it\"",
+        "wallet_ironwood": 0,
+        "wallet_sapling": 0
+      },
+      "recovered_matches_honest": true
+    },
+    {
+      "name": "lying-producer",
+      "mutation": "memo-digest",
+      "target": "producer",
+      "height": 114,
+      "direct": null,
+      "gateway": {
+        "verified_height_before_wallet": 113,
+        "verified_height_after_wallet": 113,
+        "held_below_mutation": true,
+        "failure": "transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to 7c0a52991a3dfb197ed545c38eefd80f928cc39dad39d75743c0e8e48f0f8c31",
+        "wallet_sync_errors": "error: Sync error.\ncaused by: server error\ncaused by: server request failed\ncaused by: code: 'Unrecoverable data loss or corruption', message: \"ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to 7c0a52991a3dfb197ed545c38eefd80f928cc39dad39d75743c0e8e48f0f8c31\"",
+        "wallet_ironwood": 0,
+        "wallet_sapling": 0
+      },
+      "recovered_matches_honest": true
+    }
+  ]
+}

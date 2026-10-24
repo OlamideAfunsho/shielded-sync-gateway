@@ -1,0 +1,32 @@
+
+{
+    txid: d265f780e10754a138ed581266cf9421318f479ec21f23309b21dedf1be1fbe4
+    datetime: 2011-02-02 23:17:03 UTC
+    status: confirmed
+    blockheight: 114
+    kind: received
+    value: 375000000
+    fee: 20000
+    zec price: not available
+    pools sent from: 
+    ironwood notes: 
+	{
+            value: 250000000
+            spend status: unspent
+            output index: 0
+            memo: step 1: ironwood payment
+        }
+    orchard notes: 
+    sapling notes: 
+	{
+            value: 125000000
+            spend status: unspent
+            output index: 0
+            memo: step 1: sapling payment
+        }
+    transparent coins: 
+    outgoing ironwood notes: 
+    outgoing orchard notes: 
+    outgoing sapling notes: 
+    outgoing transparent coins: 
+}

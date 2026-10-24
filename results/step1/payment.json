@@ -1,0 +1,13 @@
+{
+  "txids": [
+    "d265f780e10754a138ed581266cf9421318f479ec21f23309b21dedf1be1fbe4"
+  ],
+  "transmissions": [
+    {
+      "txid": "d265f780e10754a138ed581266cf9421318f479ec21f23309b21dedf1be1fbe4",
+      "over_mixnet": false,
+      "destination": "127.0.0.1",
+      "rtt_ms": 425
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "check": "receive: gateway wallet matches direct",
+    "pass": true,
+    "detail": "balance 250000000 125000000, height 116"
+  },
+  {
+    "check": "restart: resumes from stored height",
+    "pass": true,
+    "detail": "stopped at 116, restarted, verified 5 new blocks, now at 121"
+  },
+  {
+    "check": "restart: log shows resume",
+    "pass": true,
+    "detail": "resumed_at=116"
+  },
+  {
+    "check": "crash: state is a contiguous verified prefix",
+    "pass": true,
+    "detail": "killed with 147 of 421 verified; 147 blocks, heights 1..147, 149 txids, no orphans"
+  },
+  {
+    "check": "crash: restarted gateway reaches tip",
+    "pass": true,
+    "detail": "resumed at 147, reached 421"
+  },
+  {
+    "check": "crash: wallets agree afterwards",
+    "pass": true,
+    "detail": "height 421"
+  },
+  {
+    "check": "reorg: wallets agree before",
+    "pass": true,
+    "detail": "spend mined at 422"
+  },
+  {
+    "check": "reorg: gateway rolled back and re-verified",
+    "pass": true,
+    "detail": "height 422 changed 00a91522e5b170a42ad23de2b218a0e17c34e5e2ced3fc7884c2821e202111cb -> 7b690758f0b47ec2a578792ec5343fd0905e47611912d06e64138fa04d608eec; rollbacks 0 -> 1 (4 blocks total); verified to 427"
+  },
+  {
+    "check": "reorg: every stored hash is on the trusted best chain",
+    "pass": true,
+    "detail": "0 mismatches"
+  },
+  {
+    "check": "reorg: wallets agree after",
+    "pass": true,
+    "detail": "balance 250000000 125000000, height 427"
+  }
+]

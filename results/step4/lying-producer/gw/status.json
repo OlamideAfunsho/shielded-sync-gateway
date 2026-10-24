@@ -1,0 +1,15 @@
+{
+  "checkpoint_height": 0,
+  "verified_height": 120,
+  "trusted_tip": 120,
+  "failure": null,
+  "blocks_verified": 120,
+  "rollbacks": 0,
+  "rolled_back_blocks": 0,
+  "verify_seconds": 0.05752940099999999,
+  "compact_bytes_in": 42021,
+  "record_bytes_in": 14830,
+  "trusted_bytes_in": 908007,
+  "failures_seen": 1,
+  "peak_rss_kb": 12064
+}

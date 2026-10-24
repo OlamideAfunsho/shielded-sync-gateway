@@ -1,0 +1,31 @@
+
+{
+    txid: 22c44a9bcef186d6cda2897d5398aea01ca302ea98a390d29f7f4b059029df67
+    datetime: 2011-02-02 23:17:03 UTC
+    status: confirmed
+    blockheight: 114
+    transaction fee: 20000
+    zec price: not available
+    kind: received
+    value: 250000000
+    recipient_address: not available
+    pools_sent_from: 
+    pools_received: Ironwood
+    memos: 
+	memo 1: ironwood payment
+}
+{
+    txid: 22c44a9bcef186d6cda2897d5398aea01ca302ea98a390d29f7f4b059029df67
+    datetime: 2011-02-02 23:17:03 UTC
+    status: confirmed
+    blockheight: 114
+    transaction fee: 20000
+    zec price: not available
+    kind: received
+    value: 125000000
+    recipient_address: not available
+    pools_sent_from: 
+    pools_received: Sapling
+    memos: 
+	memo 1: sapling payment
+}

@@ -1,0 +1,71 @@
+# zebrad 6.3.0, disposable regtest node. Rendered by scripts/regtest.sh;
+# .run and tmBsTi2xWTjUdEXnuTceL7fecEQKeWaPDJd are substituted at launch.
+#
+# Activation heights are zingolabs/infrastructure's regtest fixture
+# ("all=1,nu5=2,nu6=2,nu6_1=5,nu6_2=5,nu6_3=5,nu7=off"). NU6.1 cannot share
+# height 1 with the start of the deferred funding stream: the lockbox
+# disbursement at NU6.1 would drain a pool that is still empty and zebrad
+# rejects the block (deferred value -1). From height 5 on, these agree
+# with zingo-cli's built-in regtest heights (everything active, NU7 off).
+
+[consensus]
+checkpoint_sync = true
+
+[mempool]
+eviction_memory_time = "1h"
+tx_cost_limit = 80000000
+
+[network]
+network = "Regtest"
+listen_addr = "127.0.0.1:18344"
+initial_mainnet_peers = []
+initial_testnet_peers = []
+cache_dir = false
+max_connections_per_ip = 1
+
+[rpc]
+listen_addr = "127.0.0.1:18232"
+indexer_listen_addr = "127.0.0.1:18230"
+enable_cookie_auth = false
+cookie_dir = ".run/zebra"
+parallel_cpu_threads = 0
+
+[state]
+cache_dir = ".run/zebra"
+ephemeral = false
+delete_old_database = true
+
+[health]
+listen_addr = "127.0.0.1:18080"
+min_connected_peers = 0
+enforce_on_test_networks = false
+
+[tracing]
+use_color = false
+filter = "info"
+
+[mining]
+miner_address = "tmBsTi2xWTjUdEXnuTceL7fecEQKeWaPDJd"
+
+[network.testnet_parameters.activation_heights]
+Canopy = 1
+NU5 = 1
+NU6 = 1
+"NU6.1" = 1
+"NU6.2" = 1
+"NU6.3" = 1
+
+# ZIP 1015 / ZIP 271: NU6.1 activation needs a lockbox disbursement and a
+# deferred funding stream feeding it, or zebrad rejects the activation
+# block. Same values as zingolabs/infrastructure's regtest fixture.
+[[network.testnet_parameters.lockbox_disbursements]]
+address = "t2RnBRiqrN1nW4ecZs1Fj3WWjNdnSs4kiX8"
+amount = 1
+
+[network.testnet_parameters.post_nu6_funding_streams.height_range]
+start = 1
+end = 1000000
+
+[[network.testnet_parameters.post_nu6_funding_streams.recipients]]
+receiver = "Deferred"
+numerator = 1

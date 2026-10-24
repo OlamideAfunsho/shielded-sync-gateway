@@ -1,0 +1,18 @@
+[2m2026-10-24T00:50:29.100416Z[0m [31mERROR[0m [2mpepper_sync::client::fetch[0m[2m:[0m [3merror[0m[2m=[0mcode: 'Unrecoverable data loss or corruption', message: "ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1: compact block claims txid 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c, fields hash to 7c0a52991a3dfb197ed545c38eefd80f928cc39dad39d75743c0e8e48f0f8c31"
+[
+    confirmed_ironwood_balance: 0
+    unconfirmed_ironwood_balance: 0
+    total_ironwood_balance: 0
+
+    confirmed_orchard_balance: 0
+    unconfirmed_orchard_balance: 0
+    total_orchard_balance: 0
+
+    confirmed_sapling_balance: 0
+    unconfirmed_sapling_balance: 0
+    total_sapling_balance: 0
+
+    confirmed_transparent_balance: 0
+    unconfirmed_transparent_balance: 0
+    total_transparent_balance: 0
+]

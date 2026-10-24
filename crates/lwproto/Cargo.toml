@@ -1,0 +1,13 @@
+[package]
+name = "lwproto"
+description = "Lightwallet protocol (CompactTxStreamer) and verification record types."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+prost.workspace = true
+tonic.workspace = true
+
+[build-dependencies]
+tonic-build.workspace = true

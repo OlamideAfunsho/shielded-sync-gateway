@@ -1,0 +1,17 @@
+[
+    confirmed_ironwood_balance: 149_990_000
+    unconfirmed_ironwood_balance: 0
+    total_ironwood_balance: 149_990_000
+
+    confirmed_orchard_balance: 0
+    unconfirmed_orchard_balance: 0
+    total_orchard_balance: 0
+
+    confirmed_sapling_balance: 0
+    unconfirmed_sapling_balance: 0
+    total_sapling_balance: 0
+
+    confirmed_transparent_balance: 0
+    unconfirmed_transparent_balance: 0
+    total_transparent_balance: 0
+]

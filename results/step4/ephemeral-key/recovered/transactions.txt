@@ -1,0 +1,66 @@
+
+{
+    txid: 24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c
+    datetime: 2011-02-02 23:17:03 UTC
+    status: confirmed
+    blockheight: 114
+    kind: received
+    value: 375000000
+    fee: 20000
+    zec price: not available
+    pools sent from: 
+    ironwood notes: 
+	{
+            value: 250000000
+            spend status: confirmed spent in bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05
+            output index: 0
+            memo: ironwood payment
+        }
+    orchard notes: 
+    sapling notes: 
+	{
+            value: 125000000
+            spend status: unspent
+            output index: 1
+            memo: sapling payment
+        }
+    transparent coins: 
+    outgoing ironwood notes: 
+    outgoing orchard notes: 
+    outgoing sapling notes: 
+    outgoing transparent coins: 
+}
+{
+    txid: bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05
+    datetime: 2011-02-02 23:17:04 UTC
+    status: confirmed
+    blockheight: 117
+    kind: sent
+    value: 100000000
+    fee: 10000
+    zec price: not available
+    pools sent from: Ironwood
+    ironwood notes: 
+	{
+            value: 149990000
+            spend status: unspent
+            output index: 0
+            memo: 
+        }
+    orchard notes: 
+    sapling notes: 
+    transparent coins: 
+    outgoing ironwood notes: 
+	{
+            value: 100000000
+            memo: spend
+            recipient: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+            recipient unified address: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+            output index: 1
+            account id: 0
+            scope: external
+        }
+    outgoing orchard notes: 
+    outgoing sapling notes: 
+    outgoing transparent coins: 
+}

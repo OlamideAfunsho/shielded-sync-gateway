@@ -1,0 +1,46 @@
+{
+  "ironwood_notes": {
+    "note_summaries": [
+      {
+        "value": 149990000,
+        "status": "confirmed at block height 117",
+        "spend_status": "unspent",
+        "memo": null,
+        "time": 1296688624,
+        "txid": "bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05",
+        "output_index": 0,
+        "account_id": 0,
+        "scope": "internal"
+      },
+      {
+        "value": 250000000,
+        "status": "confirmed at block height 114",
+        "spend_status": "confirmed spent in bc6cd531c90cbff0aa95f14a35c627b56816c7630490b9271032f638f35fad05",
+        "memo": "ironwood payment",
+        "time": 1296688623,
+        "txid": "24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c",
+        "output_index": 0,
+        "account_id": 0,
+        "scope": "external"
+      }
+    ]
+  },
+  "orchard_notes": {
+    "note_summaries": []
+  },
+  "sapling_notes": {
+    "note_summaries": [
+      {
+        "value": 125000000,
+        "status": "confirmed at block height 114",
+        "spend_status": "unspent",
+        "memo": "sapling payment",
+        "time": 1296688623,
+        "txid": "24f32b5f532a113c96eb7ffc9fe90e5eb089a31c6d439a3b0ce4c9e9d0ad5b9c",
+        "output_index": 1,
+        "account_id": 0,
+        "scope": "external"
+      }
+    ]
+  }
+}

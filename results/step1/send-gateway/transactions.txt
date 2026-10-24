@@ -1,0 +1,100 @@
+
+{
+    txid: d265f780e10754a138ed581266cf9421318f479ec21f23309b21dedf1be1fbe4
+    datetime: 2011-02-02 23:17:03 UTC
+    status: confirmed
+    blockheight: 114
+    kind: received
+    value: 375000000
+    fee: 20000
+    zec price: not available
+    pools sent from: 
+    ironwood notes: 
+	{
+            value: 250000000
+            spend status: confirmed spent in 329ccb1008616fe72529d119f7e69565b8e96001885ad3b0808ff4b703209822
+            output index: 0
+            memo: step 1: ironwood payment
+        }
+    orchard notes: 
+    sapling notes: 
+	{
+            value: 125000000
+            spend status: unspent
+            output index: 0
+            memo: step 1: sapling payment
+        }
+    transparent coins: 
+    outgoing ironwood notes: 
+    outgoing orchard notes: 
+    outgoing sapling notes: 
+    outgoing transparent coins: 
+}
+{
+    txid: 329ccb1008616fe72529d119f7e69565b8e96001885ad3b0808ff4b703209822
+    datetime: 2011-02-02 23:17:04 UTC
+    status: confirmed
+    blockheight: 117
+    kind: sent
+    value: 100000000
+    fee: 10000
+    zec price: not available
+    pools sent from: Ironwood
+    ironwood notes: 
+	{
+            value: 149990000
+            spend status: confirmed spent in f133e394771c82ad3a0f20f0a49ccff8c38d54bc086da61a45bbf7219d4e2033
+            output index: 0
+            memo: 
+        }
+    orchard notes: 
+    sapling notes: 
+    transparent coins: 
+    outgoing ironwood notes: 
+	{
+            value: 100000000
+            memo: step 1: spend back
+            recipient: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+            recipient unified address: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+            output index: 1
+            account id: 0
+            scope: external
+        }
+    outgoing orchard notes: 
+    outgoing sapling notes: 
+    outgoing transparent coins: 
+}
+{
+    txid: f133e394771c82ad3a0f20f0a49ccff8c38d54bc086da61a45bbf7219d4e2033
+    datetime: 2011-02-02 23:17:04 UTC
+    status: confirmed
+    blockheight: 120
+    kind: sent
+    value: 50000000
+    fee: 10000
+    zec price: not available
+    pools sent from: Ironwood
+    ironwood notes: 
+	{
+            value: 99980000
+            spend status: unspent
+            output index: 0
+            memo: 
+        }
+    orchard notes: 
+    sapling notes: 
+    transparent coins: 
+    outgoing ironwood notes: 
+	{
+            value: 50000000
+            memo: step 1: sent through gateway
+            recipient: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+            recipient unified address: uregtest1h8fnf3vrmswwj0r6nfvq24nxzmyjzaq5jvyxyc2afjtuze8tn93zjqt87kv9wm0ew4rkprpuphf08tc7f5nnd3j3kxnngyxf0cv9k9lc
+            output index: 1
+            account id: 0
+            scope: external
+        }
+    outgoing orchard notes: 
+    outgoing sapling notes: 
+    outgoing transparent coins: 
+}

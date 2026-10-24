@@ -1,0 +1,1 @@
+PASS: gateway sync matches direct sync (receive, spend detection, send)

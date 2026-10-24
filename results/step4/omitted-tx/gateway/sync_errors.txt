@@ -1,0 +1,4 @@
+error: Sync error.
+caused by: server error
+caused by: server request failed
+caused by: code: 'Unrecoverable data loss or corruption', message: "ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1 has shielded data but the compact block omits it"

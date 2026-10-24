@@ -1,0 +1,3 @@
+2026-10-24T00:38:42.008284Z  INFO verified chain loaded (resuming after restart) checkpoint=0 resumed_at=116
+2026-10-24T00:38:42.008396Z  INFO verifying gateway listening listen=127.0.0.1:9168 indexer=http://127.0.0.1:8137 producer=http://127.0.0.1:9180
+2026-10-24T00:38:42.063349Z  INFO verified up to trusted tip height=121 blocks=5

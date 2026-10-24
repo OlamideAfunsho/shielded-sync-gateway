@@ -1,0 +1,77 @@
+// Verification records: what the untrusted producer sends the gateway for
+// each block, alongside the compact block an indexer serves.
+//
+// A record lists every transaction in the block, in block order. For v5 and
+// v6 transactions it carries only the parts of the ZIP 244 txid digest
+// tree that are *not* in the compact block. The gateway rebuilds the txid
+// from those parts plus the compact fields, rebuilds the block's
+// transaction Merkle root from all txids, and compares it with the root in
+// a header from a trusted validator. Any change to a compact field, a
+// missing or extra transaction, or a reordering changes the root.
+//
+// See docs/proof-spec.md for the exact hashing rules.
+
+syntax = "proto3";
+package ssg.record.v1;
+
+message BlockRecord {
+  uint32 height = 1;
+  // Block hash, protocol byte order. Checked against the trusted header.
+  bytes block_hash = 2;
+  // Every transaction in the block, coinbase first, in block order.
+  repeated TxRecord txs = 3;
+}
+
+message TxRecord {
+  oneof body {
+    // v5 and v6 transactions.
+    PrunedTx pruned = 1;
+    // The full serialized transaction. Required for v4 and earlier, whose
+    // txid is a hash of the whole encoding; allowed for any version.
+    bytes raw = 2;
+  }
+}
+
+message PrunedTx {
+  // ZIP 244 T.1 header fields.
+  uint32 header = 1;              // version | fOverwintered << 31
+  uint32 version_group_id = 2;
+  uint32 consensus_branch_id = 3;
+  uint32 lock_time = 4;
+  uint32 expiry_height = 5;
+  // ZIP 244 T.2b sequence digest over every transparent input (32 bytes),
+  // or empty if the transaction has no transparent bundle. The prevouts
+  // (T.2a) and outputs (T.2c) digests are rebuilt from the compact vin and
+  // vout, so transparent compact data is authenticated too.
+  bytes sequence_digest = 6;
+  // Absent when the transaction has no bundle of that kind.
+  SaplingRemainder sapling = 7;
+  ActionsRemainder orchard = 8;
+  ActionsRemainder ironwood = 9;   // v6 only
+}
+
+// The parts of a Sapling bundle's digest that the compact block lacks.
+message SaplingRemainder {
+  uint32 spends = 1;
+  uint32 outputs = 2;
+  // T.3a: digest over (cv, [anchor,] rk) of every spend. Empty if no spends.
+  bytes spends_noncompact_digest = 3;
+  // T.3b: digest over enc_ciphertext[52..564] of every output.
+  bytes outputs_memos_digest = 4;
+  // T.3b: digest over (cv, enc_ciphertext[564..], out_ciphertext).
+  bytes outputs_noncompact_digest = 5;
+  int64 value_balance = 6;
+}
+
+// The parts of an Orchard or Ironwood bundle's digest that the compact
+// block lacks.
+message ActionsRemainder {
+  uint32 actions = 1;
+  bytes memos_digest = 2;
+  bytes noncompact_digest = 3;
+  uint32 flags = 4;
+  int64 value_balance = 5;
+  // Orchard in v5 transactions only; the v6 formats commit to the anchor
+  // in the authorizing data instead.
+  bytes anchor = 6;
+}

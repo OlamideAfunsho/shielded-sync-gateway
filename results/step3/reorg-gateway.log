@@ -1,0 +1,14 @@
+2026-10-24T00:39:56.823534Z  INFO verified chain loaded (resuming after restart) checkpoint=0 resumed_at=147
+2026-10-24T00:39:56.823608Z  INFO verifying gateway listening listen=127.0.0.1:9168 indexer=http://127.0.0.1:8137 producer=http://127.0.0.1:9180
+2026-10-24T00:39:57.177683Z  INFO verified up to trusted tip height=421 blocks=274
+2026-10-24T00:40:09.813388Z  INFO verified up to trusted tip height=422 blocks=275
+2026-10-24T00:40:10.328896Z  WARN verification failed, verified height stays at 422: indexer did not serve blocks 423..=424: indexer stream: status: OutOfRange, message: "Error: Height out of range [424]. Height requested is greater than the best chain tip [422].", details: [], metadata: MetadataMap { headers: {} } height=423
+2026-10-24T00:40:10.834816Z  INFO verification recovered height=423
+2026-10-24T00:40:10.836837Z  INFO verified up to trusted tip height=425 blocks=278
+2026-10-24T00:40:19.387124Z  WARN trusted chain changed: rolled back verified blocks from=425 to=421 blocks=4
+2026-10-24T00:40:19.387210Z  INFO verified up to trusted tip height=421 blocks=278
+2026-10-24T00:40:19.892908Z  WARN verification failed, verified height stays at 421: indexer did not serve blocks 422..=423: indexer stream: status: OutOfRange, message: "Error: Height out of range [423]. Height requested is greater than the best chain tip [422].", details: [], metadata: MetadataMap { headers: {} } height=422
+2026-10-24T00:40:20.400465Z  WARN verification failed, verified height stays at 421: indexer did not serve blocks 422..=425: indexer stream: status: OutOfRange, message: "Error: Height out of range [425]. Height requested is greater than the best chain tip [422].", details: [], metadata: MetadataMap { headers: {} } height=422
+2026-10-24T00:40:20.905622Z  WARN verification failed, verified height stays at 421: indexer did not serve blocks 422..=427: indexer stream: status: OutOfRange, message: "Error: Height out of range [427]. Height requested is greater than the best chain tip [426].", details: [], metadata: MetadataMap { headers: {} } height=422
+2026-10-24T00:40:21.916394Z  INFO verification recovered height=422
+2026-10-24T00:40:21.920086Z  INFO verified up to trusted tip height=427 blocks=284

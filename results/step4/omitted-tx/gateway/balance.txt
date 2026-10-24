@@ -1,0 +1,18 @@
+[2m2026-10-24T00:50:19.925262Z[0m [31mERROR[0m [2mpepper_sync::client::fetch[0m[2m:[0m [3merror[0m[2m=[0mcode: 'Unrecoverable data loss or corruption', message: "ssg-gateway: block 114 failed verification; refusing to serve it: transaction 1 has shielded data but the compact block omits it"
+[
+    confirmed_ironwood_balance: 0
+    unconfirmed_ironwood_balance: 0
+    total_ironwood_balance: 0
+
+    confirmed_orchard_balance: 0
+    unconfirmed_orchard_balance: 0
+    total_orchard_balance: 0
+
+    confirmed_sapling_balance: 0
+    unconfirmed_sapling_balance: 0
+    total_sapling_balance: 0
+
+    confirmed_transparent_balance: 0
+    unconfirmed_transparent_balance: 0
+    total_transparent_balance: 0
+]

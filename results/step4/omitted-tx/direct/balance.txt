@@ -1,0 +1,18 @@
+[2m2026-10-24T00:50:18.609232Z[0m [31mERROR[0m [2mpepper_sync::sync[0m[2m:[0m RESCAN TRIGGERED: at height 114, Sapling history recorded a commitment tree of 0 where the chain reports 2; the wallet's Sapling records are being cleared back to the pool activation height and the next sync rescans from there.
+[
+    confirmed_ironwood_balance: 0
+    unconfirmed_ironwood_balance: 0
+    total_ironwood_balance: 0
+
+    confirmed_orchard_balance: 0
+    unconfirmed_orchard_balance: 0
+    total_orchard_balance: 0
+
+    confirmed_sapling_balance: 0
+    unconfirmed_sapling_balance: 0
+    total_sapling_balance: 0
+
+    confirmed_transparent_balance: 0
+    unconfirmed_transparent_balance: 0
+    total_transparent_balance: 0
+]

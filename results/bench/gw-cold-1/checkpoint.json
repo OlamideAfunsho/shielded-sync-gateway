@@ -1,0 +1,20 @@
+{
+  "network": "test",
+  "height": 0,
+  "hash": "029f11d80ef9765602235e1bc9727e3eb6ba20839319f761fee920d63401e327",
+  "sapling": {
+    "final_state": "",
+    "final_root": "",
+    "size": 0
+  },
+  "orchard": {
+    "final_state": "",
+    "final_root": "",
+    "size": 0
+  },
+  "ironwood": {
+    "final_state": "",
+    "final_root": "",
+    "size": 0
+  }
+}

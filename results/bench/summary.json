@@ -1,0 +1,55 @@
+{
+  "tip": 1018,
+  "full_block_bytes": 1700503,
+  "gateway_catchup_seconds": 1.29,
+  "paths": {
+    "direct": {
+      "runs": 3,
+      "sync_seconds": [
+        3.02,
+        3.02,
+        3.02
+      ],
+      "sync_seconds_median": 3.02,
+      "wallet_peak_rss_kb_median": 26648,
+      "calls_median": 51,
+      "wallet_bytes_sent_median": 1453,
+      "wallet_bytes_received_median": 131020
+    },
+    "cold": {
+      "runs": 3,
+      "sync_seconds": [
+        3.02,
+        3.02,
+        3.03
+      ],
+      "sync_seconds_median": 3.02,
+      "wallet_peak_rss_kb_median": 26832,
+      "calls_median": 51,
+      "wallet_bytes_sent_median": 1453,
+      "wallet_bytes_received_median": 131047
+    },
+    "warm": {
+      "runs": 3,
+      "sync_seconds": [
+        2.02,
+        2.02,
+        2.02
+      ],
+      "sync_seconds_median": 2.02,
+      "wallet_peak_rss_kb_median": 26836,
+      "calls_median": 51,
+      "wallet_bytes_sent_median": 1453,
+      "wallet_bytes_received_median": 131047
+    }
+  },
+  "gateway": {
+    "blocks_verified": 1018,
+    "verify_cpu_seconds": 0.396,
+    "verify_ms_per_block": 0.3888,
+    "compact_bytes_in": 157856,
+    "record_bytes_in": 98013,
+    "trusted_bytes_in": 4571437,
+    "peak_rss_kb": 12888
+  }
+}

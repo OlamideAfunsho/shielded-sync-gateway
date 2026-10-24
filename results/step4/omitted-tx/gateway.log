@@ -1,0 +1,5 @@
+2026-10-24T00:50:19.556452Z  INFO verified chain loaded checkpoint=0 resumed_at=0
+2026-10-24T00:50:19.556535Z  INFO verifying gateway listening listen=127.0.0.1:9168 indexer=http://127.0.0.1:9170 producer=http://127.0.0.1:9180
+2026-10-24T00:50:19.705826Z  WARN verification failed, verified height stays at 113: transaction 1 has shielded data but the compact block omits it height=114
+2026-10-24T00:50:26.315797Z  INFO verification recovered height=114
+2026-10-24T00:50:26.324135Z  INFO verified up to trusted tip height=120 blocks=120

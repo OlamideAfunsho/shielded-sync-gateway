@@ -1,0 +1,29 @@
+[package]
+name = "ssg-producer"
+description = "Reads full blocks from a Zcash node and serves verification records."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "ssg-producer"
+path = "src/main.rs"
+
+[dependencies]
+ssg-verifier = { path = "../verifier" }
+lwproto = { path = "../lwproto" }
+prost.workspace = true
+tokio.workspace = true
+hyper.workspace = true
+hyper-util.workspace = true
+http.workspace = true
+http-body-util.workspace = true
+bytes.workspace = true
+serde_json.workspace = true
+reqwest.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+hex.workspace = true
+anyhow.workspace = true
